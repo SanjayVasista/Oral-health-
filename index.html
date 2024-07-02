@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oral Health Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oral Health Hub</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Oral Health Hub</h1>
+            <p>Your Trusted Partner in Oral Healthcare</p>
+            <a href="appointment.html" class="btn">Consult a Doctor</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="vision">
+                <h2>Our Vision</h2>
+                <p>At Oral Health Hub, our vision is to ensure the best oral healthcare for all our patients. We strive to be the leading provider of oral healthcare services, leveraging cutting-edge technology and compassionate care to deliver the highest standards of treatment.</p>
+            </div>
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>Our mission is to make high-quality oral healthcare accessible and affordable for everyone. We are committed to continuous innovation and excellence in patient care, aiming to improve the overall health and well-being of our community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <i class="fa fa-notes-medical"></i>
+                    <h3>Store Diagnosed Diseases</h3>
+                    <p>Keep a record of all diagnosed diseases for each patient.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-pills"></i>
+                    <h3>Medicine Prescriptions</h3>
+                    <p>Store and manage all prescribed medications for easy access.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-bell"></i>
+                    <h3>Emergency Notifications</h3>
+                    <p>Receive alerts and notifications for any emergency situations.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-calendar-check"></i>
+                    <h3>Appointment Reminders</h3>
+                    <p>Get reminders for upcoming dental appointments.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-info-circle"></i>
+                    <h3>Medicine Tutorials</h3>
+                    <p>Access tutorials and information about prescribed medicines.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fa fa-smile"></i>
+                    <h3>Tips for Oral Health</h3>
+                    <p>Learn tips and best practices for maintaining oral health.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ </section>
+
+    <section id="login">
+        <div class="login-container">
+            <div class="login-box">
+                <h2>Login</h2>
+                <div class="login-options">
+                    <button class="login-btn" onclick="showLoginForm('patient')">Patient Login</button>
+                    <button class="login-btn" onclick="showLoginForm('doctor')">Doctor Login</button>
+                </div>
+            </div>
+            <div id="login-form" class="login-form">
+                <form id="patient-form" class="form-content" onsubmit="submitForm(event, 'patient')">
+                    <h3>Patient Login</h3>
+                    <input type="text" id="patient-name" placeholder="Patient Name" required>
+                    <input type="password" id="patient-password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <form id="doctor-form" class="form-content" onsubmit="submitForm(event, 'doctor')">
+                    <h3>Doctor Login</h3>
+                    <input type="text" id="doctor-name" placeholder="Doctor Name" required>
+                    <input type="password" id="doctor-password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="about-us-container">
+            <h2>About Us</h2>
+            <div class="about-us-grid">
+                <div class="about-box">
+                    <i class="fa fa-users"></i>
+                    <h3>Our Team</h3>
+                    <p>Meet our team of dedicated professionals who are committed to providing the best oral healthcare services.</p>
+                </div>
+                <div class="about-box">
+                    <i class="fa fa-bullseye"></i>
+                    <h3>Our Team's Motto</h3>
+                    <p>"Excellence in oral healthcare, compassion in every touch." Our team lives by this motto to ensure every patient receives the best care possible.</p>
+                </div>
+            </div>
+        </div>
+   
+<section id="contact" class="contact-us">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-options">
+            <div class="contact-box">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:contact@oralhealthhub.com">oralhealthhub@gmail.com</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fa fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.me/18001234567" target="_blank">+1 (800) 123-4567</a></p>
+            </div>
+            <div class="contact-box">
+                <i class="fa fa-instagram"></i>
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/oralhealthhub" target="_blank">@oralhealthhub</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

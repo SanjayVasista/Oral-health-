@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients info - Doctor Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oral Health Hub</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctor-dashboard.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="patients-info">
+            <h2>Appointments</h2>
+            <div class="appointment">
+                <p>Patient 1: Patient's name</p>
+                <button onclick="viewDetails('patients-info1')">View Info</button>
+                <button onclick="updateDetails('patients-info1')">Update Info</button>
+                <div id="patients-info1" class="details"></div>
+            </div>
+            <div class="appointment">
+                <p>Patient 2: Patient's name</p>
+                <button onclick="viewDetails('patients-info2')">View Info</button>
+                <button onclick="updateDetails('patients-info2')">Update Info</button>
+                <div id="patients-info2" class="details"></div>
+            </div>
+            <div class="appointment">
+                <p>Patient 3: Patient's name</p>
+                <button onclick="viewDetails('patients-info3')">View Info</button>
+                <button onclick="updateDetails('patients-info3')">Update Info</button>
+                <div id="patients-info3" class="details"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

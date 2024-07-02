@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult doctor- Oral health hub </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oral Health Hub</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="book-appointment" class="book-appointment">
+    <div class="container">
+        <h2>Consult a doctor </h2>
+        <form id="appointment-form" class="appointment-form">
+            <label for="association">Select Association:</label>
+            <select id="association" name="association" required>
+                <option value="" disabled selected>Select an association</option>
+                <option value="Medical Center">Medical Center</option>
+                <option value="Era Clinic">Era Clinic</option>
+            </select><br><br>
+
+            <div id="specialization-selection" style="display: none;">
+                <label for="specialization">Select Specialization:</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="" disabled selected>Select a specialization</option>
+                    <!-- Options will be populated dynamically using JavaScript -->
+                </select><br><br>
+            </div>
+
+            <div id="doctor-selection" style="display: none;">
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="" disabled selected>Select a doctor</option>
+                    <!-- Options will be populated dynamically using JavaScript -->
+                </select><br><br>
+            </div>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+
+            <label for="time">Preferred Time:</label>
+            <input type="time" id="time" name="time" required><br><br>
+
+            <label for="first-time">First Time Visit?</label>
+            <input type="checkbox" id="first-time" name="first-time"> Yes<br><br>
+
+            <button type="button" onclick="confirmAppointment()">Confirm Appointment</button>
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

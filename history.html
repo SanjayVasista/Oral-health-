@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Oral Health Hub</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="patient-dashboard.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="appointments">
+            <h2>Appointments</h2>
+            <div class="appointment">
+                <p>Appointment 1</p>
+                <button onclick="viewDetail('appointment1')">View</button>
+                <div id="appointment1" class="details"></div>
+            </div>
+            <div class="appointment">
+                <p>Appointment 2</p>
+                <button onclick="viewDetail('appointment2')">View</button>
+                <div id="appointment2" class="details"></div>
+            </div>
+            <div class="appointment">
+                <p>Appointment 3</p>
+                <button onclick="viewDetail('appointment3')">View</button>
+                <div id="appointment3" class="details"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
